@@ -6,8 +6,7 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Only include routes that actually exist right now -->
-  <!-- Remove these if you don’t have real pages for them yet -->
+  <!-- Uncomment these if you have real pages for them -->
   <!--
   <url>
     <loc>https://subhan-portfolio-navy.vercel.app/projects</loc>
