@@ -36,7 +36,7 @@ export const metadata = {
   title: 'Subhan Nadeem – Full-Stack Developer Portfolio',
   description:
     'Portfolio of Subhan Nadeem, a full-stack developer specializing in Next.js, Node.js, and PostgreSQL. Explore HireFlow, RE’s Hardware Store, and a React Movie SEO app.',
-
+  verification: { google: j_3AG6WQO612zi2ozxY0NXAeK2yz7uCKWKVaTHf27ys },
   openGraph: {
     title: 'Subhan Nadeem – Full-Stack Developer',
     description:
