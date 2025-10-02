@@ -193,7 +193,7 @@ export default function Portfolio() {
                   <button
                     key={item}
                     onClick={() => scrollToSection(item)}
-                    className={`capitalize transition-all duration-300 hover:text-cyan-400 ${
+                    className={`capitalize transition-all duration-2000 scroll-smooth hover:text-cyan-400 ${
                       activeSection === item
                         ? 'text-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.5)]'
                         : 'text-gray-300'
