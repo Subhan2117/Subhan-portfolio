@@ -117,7 +117,7 @@ export default function Portfolio() {
         'Role-based job tracking with dashboards, saved/applied jobs, and auth. Built on Next.js with API routes, PostgreSQL (Neon) via Prisma, and NextAuth. Deployed on Vercel.',
       image: '/images/hireflow.png', // add file to /public/images/
       liveLink: 'https://hire-flow-orpin.vercel.app/',
-      githubLink: '#', // replace with your repo when ready
+      githubLink: 'https://github.com/Subhan2117/hire-flow', // replace with your repo when ready
       tech: [
         'Next.js',
         'API Routes',
@@ -133,7 +133,7 @@ export default function Portfolio() {
       description:
         'E-commerce style app for tools inventory. Clean catalog UI with filters, saved items, and employer/user flows. Transitioned from mock data to PostgreSQL & API routes.',
       image: '/images/re-hardware-store.png', // add file to /public/images/
-      liveLink: '#', // replace when deployed
+      liveLink: 'https://re-hardware-store.vercel.app/store', // replace when deployed
       githubLink: 'https://github.com/Subhan2117/re-hardware-store', // you can keep/update this
       tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
     },
@@ -291,13 +291,13 @@ export default function Portfolio() {
               <Github className="w-6 h-6" />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/subhan-nadeem-7847312a0/"
               className="text-gray-400 hover:text-cyan-400 transition-colors"
             >
               <Linkedin className="w-6 h-6" />
             </Link>
             <Link
-              href="mailto:your.email@example.com"
+              href="subhannadeem"
               className="text-gray-400 hover:text-cyan-400 transition-colors"
             >
               <Mail className="w-6 h-6" />
@@ -507,7 +507,9 @@ export default function Portfolio() {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-cyan-400 mr-3" />
-                  <span className="text-gray-300">your.email@example.com</span>
+                  <span className="text-gray-300">
+                    subhannadeem06@gmail.com
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <Github className="w-5 h-5 text-cyan-400 mr-3" />
@@ -516,7 +518,7 @@ export default function Portfolio() {
                 <div className="flex items-center">
                   <Linkedin className="w-5 h-5 text-cyan-400 mr-3" />
                   <span className="text-gray-300">
-                    linkedin.com/in/yourprofile
+                    linkedin.com/in/subhan-nadeem-7847312a0/
                   </span>
                 </div>
               </div>
