@@ -1,0 +1,35 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Movie Explorer screenshot mockup">
+  <defs>
+    <linearGradient id="movie-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0f172a" offset="0" />
+      <stop stop-color="#1e293b" offset="1" />
+    </linearGradient>
+    <filter id="movie-shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="15" stdDeviation="25" flood-opacity="0.2" />
+    </filter>
+  </defs>
+  <rect width="1440" height="900" fill="url(#movie-bg)" />
+  <text x="100" y="120" font-size="30" fill="#fbbf24" font-weight="600">Movie Explorer</text>
+  <rect x="100" y="150" width="1240" height="80" rx="16" fill="#1f2937" stroke="#334155" />
+  <text x="140" y="202" font-size="20" fill="#9ca3af">Search movies, actors, genres...</text>
+  <g transform="translate(100 260)">
+    <g filter="url(#movie-shadow)">
+      <rect width="280" height="420" rx="24" fill="#111827" stroke="#1f2937" />
+      <rect x="35" y="30" width="210" height="260" rx="18" fill="#4c1d95" />
+      <text x="40" y="330" font-size="20" fill="#e2e8f0" font-weight="600">Neon Nights</text>
+      <text x="40" y="360" font-size="14" fill="#94a3b8">Sci-Fi • 2h 14m</text>
+    </g>
+    <g transform="translate(320 0)" filter="url(#movie-shadow)">
+      <rect width="280" height="420" rx="24" fill="#111827" stroke="#1f2937" />
+      <rect x="35" y="30" width="210" height="260" rx="18" fill="#0ea5e9" />
+      <text x="40" y="330" font-size="20" fill="#e2e8f0" font-weight="600">Solar Drift</text>
+      <text x="40" y="360" font-size="14" fill="#94a3b8">Adventure • 1h 58m</text>
+    </g>
+    <g transform="translate(640 0)" filter="url(#movie-shadow)">
+      <rect width="280" height="420" rx="24" fill="#111827" stroke="#1f2937" />
+      <rect x="35" y="30" width="210" height="260" rx="18" fill="#dc2626" />
+      <text x="40" y="330" font-size="20" fill="#e2e8f0" font-weight="600">Crimson Echo</text>
+      <text x="40" y="360" font-size="14" fill="#94a3b8">Thriller • 2h 05m</text>
+    </g>
+  </g>
+</svg>

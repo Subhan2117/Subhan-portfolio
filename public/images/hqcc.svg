@@ -1,0 +1,33 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="HQCC landing screenshot mockup">
+  <defs>
+    <radialGradient id="hqcc-bg" cx="50%" cy="40%" r="80%">
+      <stop stop-color="#020617" offset="0" />
+      <stop stop-color="#01030d" offset="1" />
+    </radialGradient>
+    <linearGradient id="hqcc-text" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#67e8f9" offset="0" />
+      <stop stop-color="#38bdf8" offset="1" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#hqcc-bg)" />
+  <g stroke="#1e3a8a" stroke-width="0.5" opacity="0.4">
+    <circle cx="200" cy="100" r="2" />
+    <circle cx="350" cy="250" r="3" />
+    <circle cx="800" cy="200" r="2.5" />
+    <circle cx="1100" cy="400" r="3" />
+    <circle cx="600" cy="500" r="2" />
+    <circle cx="900" cy="650" r="2.5" />
+    <circle cx="200" cy="700" r="2" />
+    <circle cx="1250" cy="250" r="2" />
+  </g>
+  <text x="120" y="120" font-size="22" fill="#38bdf8" font-weight="600">HQCC</text>
+  <text x="120" y="200" font-size="48" fill="#fff" font-weight="700">Quantum Computing Club</text>
+  <text x="120" y="250" font-size="22" fill="#67e8f9" letter-spacing="0.4em">EXPLORE • BUILD • COLLABORATE</text>
+  <text x="120" y="310" font-size="20" fill="#94a3b8" opacity="0.8">
+    Dive into the frontier of quantum computing with peers and pioneering mentors.
+  </text>
+  <rect x="120" y="350" width="220" height="60" rx="30" fill="#06b6d4" />
+  <text x="165" y="388" font-size="18" fill="#02101e" font-weight="600">Join the Club</text>
+  <rect x="360" y="350" width="240" height="60" rx="30" fill="#0f172a" stroke="#0ea5e9" />
+  <text x="405" y="388" font-size="18" fill="#e0f2fe" font-weight="600">Explore Activities</text>
+</svg>
