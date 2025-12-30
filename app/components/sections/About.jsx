@@ -38,7 +38,8 @@ export default function About() {
             </p>
 
             <a
-              href="/resume.pdf"
+              href="/images/Resume.pdf"
+              download
               className="inline-block mt-4 px-6 py-2 rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-amber-400 text-white font-semibold tracking-wide shadow-[0_10px_35px_rgba(37,99,235,0.35)] hover:shadow-[0_15px_45px_rgba(37,99,235,0.45)] transition"
             >
               Download Resume

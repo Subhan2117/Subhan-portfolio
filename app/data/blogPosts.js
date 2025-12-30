@@ -1,14 +1,32 @@
-export const blogPosts = [
-  {
-    title: 'PostgreSQL + Prisma in Next.js',
-    excerpt: 'Schema modeling, migrations, and Neon best practices.',
-    date: '2024-01-08',
-    readTime: '6 min read',
-  },
-  {
-    title: 'Auth in Next.js',
-    excerpt: 'NextAuth vs Supabase and when to use each.',
-    date: '2024-01-01',
-    readTime: '10 min read',
-  },
-];
+import fs from 'node:fs';
+import path from 'node:path';
+import matter from 'gray-matter';
+
+const contentDir = path.join(process.cwd(), 'content', 'blog');
+
+const loadPosts = () => {
+  if (!fs.existsSync(contentDir)) {
+    return [];
+  }
+
+  return fs
+    .readdirSync(contentDir)
+    .filter((file) => file.endsWith('.mdx'))
+    .map((file) => {
+      const filePath = path.join(contentDir, file);
+      const fileContents = fs.readFileSync(filePath, 'utf8');
+      const { data, content } = matter(fileContents);
+
+      return {
+        title: data.title || 'Untitled Post',
+        excerpt: data.excerpt || '',
+        date: data.date || new Date().toISOString().slice(0, 10),
+        readTime: data.readTime || '5 min read',
+        slug: file.replace(/\.mdx$/, ''),
+        content: content?.trim() || '',
+      };
+    })
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
+};
+
+export const getBlogPosts = () => loadPosts();

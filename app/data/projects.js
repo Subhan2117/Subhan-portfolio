@@ -7,6 +7,7 @@ export const projects = [
     liveLink: 'https://re-hardware-store.vercel.app/store',
     githubLink: 'https://github.com/Subhan2117/re-hardware-store',
     badge: 'Full-stack commerce',
+    role: 'Lead Developer',
     tech: [
       'Next.js',
       'PostgreSQL',
@@ -27,6 +28,7 @@ export const projects = [
     image: '/images/hqcc.svg',
     liveLink: '#',
     githubLink: '#',
+    role: 'Lead Developer',
     tech: [
       'Next.js',
       'React',
@@ -45,6 +47,7 @@ export const projects = [
     image: '/images/hireflow.svg',
     liveLink: 'https://hire-flow-orpin.vercel.app/',
     githubLink: 'https://github.com/Subhan2117/hire-flow',
+    role: 'Lead Developer',
     tech: [
       'Next.js (App Router)',
       'PostgreSQL (Neon)',
@@ -63,6 +66,7 @@ export const projects = [
     image: '/images/movie-explorer.svg',
     liveLink: '#',
     githubLink: '#',
+    role: 'Lead Developer',
     tech: [
       'React',
       'React Router',

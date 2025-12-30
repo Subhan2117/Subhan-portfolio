@@ -1,7 +1,6 @@
-import { blogPosts } from '@/app/data/blogPosts';
 import BlogCard from '../ui/BlogCard';
 
-export default function Blog() {
+export default function Blog({ posts = [] }) {
   return (
     <section id="blog" className="relative py-24 px-4">
       <div className="absolute inset-0 -z-10 pointer-events-none bg-gradient-to-br from-blue-900/30 via-transparent to-indigo-900/40" />
@@ -11,7 +10,7 @@ export default function Blog() {
         </h2>
 
         <div className="space-y-6">
-          {blogPosts.map((post) => (
+          {posts.map((post) => (
             <BlogCard key={post.title} post={post} />
           ))}
         </div>

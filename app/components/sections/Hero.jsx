@@ -120,13 +120,14 @@ export default function Hero({ scrollToSection }) {
             <ArrowRight className="w-4 h-4" />
           </button>
 
-          <Link
-            href="/resume.pdf"
+          <a
+            href="/images/Resume.pdf"
+            download
             className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-7 py-3 text-slate-200 hover:text-white hover:border-white/40 transition-colors"
           >
             Download Resume
             <Download className="w-4 h-4" />
-          </Link>
+          </a>
         </motion.div>
 
         <div className="flex justify-center gap-6 text-amber-100/80 pt-4">

@@ -1,0 +1,24 @@
+---
+title: Auth in Next.js
+excerpt: NextAuth vs Supabase and when to use each.
+date: 2024-01-01
+readTime: 10 min read
+---
+
+Choosing between NextAuth and Supabase comes down to where you want the auth
+state, session control, and user lifecycle to live.
+
+Key comparisons:
+- NextAuth is great when you want provider flexibility and you’re already
+  running a custom backend.
+- Supabase shines when you want a hosted auth system with built-in user tables,
+  policies, and real-time hooks.
+
+My default flow:
+1. Map out user roles and the data model first.
+2. Decide where sessions should be validated (edge vs server).
+3. Keep auth state on the server and never trust client-only guards.
+
+If I’m shipping quickly with minimal backend work, I’ll reach for Supabase. If I
+need deeper provider control or advanced callbacks, NextAuth is the better fit.
+

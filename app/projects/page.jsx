@@ -6,6 +6,12 @@ export default function ProjectsPage() {
     <section className="relative min-h-screen py-24 px-4">
       <div className="absolute inset-0 -z-10 pointer-events-none bg-[radial-gradient(circle_at_10%_20%,rgba(37,99,235,0.22),transparent_45%),radial-gradient(circle_at_80%_0%,rgba(14,165,233,0.15),transparent_45%)]" />
       <div className="max-w-6xl mx-auto">
+        <a
+          href="/"
+          className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors mb-8"
+        >
+          ← Back to Home
+        </a>
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.4em] uppercase text-blue-200/80">
             Portfolio
@@ -20,7 +26,7 @@ export default function ProjectsPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}

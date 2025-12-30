@@ -1,0 +1,23 @@
+---
+title: PostgreSQL + Prisma in Next.js
+excerpt: Schema modeling, migrations, and Neon best practices.
+date: 2024-01-08
+readTime: 6 min read
+---
+
+Notes on building reliable schemas, keeping migrations clean, and shipping fast with
+Prisma + Neon in a Next.js stack.
+
+What I focus on:
+- Model data relationships early (one-to-many, many-to-many) before writing UI.
+- Keep migrations small and frequent to reduce deployment risk.
+- Use database enums for status fields to avoid string drift.
+
+Example workflow:
+1. Define the schema in `schema.prisma`.
+2. Run `prisma migrate dev` locally and commit the migration.
+3. Use `prisma generate` to keep types in sync.
+
+Neon best practices:
+- Use separate branches for staging vs production.
+- Turn on connection pooling when traffic scales.

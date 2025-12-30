@@ -7,6 +7,7 @@ export async function GET() {
   // List real routes (avoid #anchors). Add more when you create pages.
   const urls = [
     { loc: `${site}/`,       changefreq: "weekly",  priority: "1.0" },
+    { loc: `${site}/skills`, changefreq: "monthly", priority: "0.7" },
     // { loc: `${site}/projects`, changefreq: "monthly", priority: "0.8" },
     // { loc: `${site}/about`,    changefreq: "monthly", priority: "0.6" },
     // { loc: `${site}/contact`,  changefreq: "monthly", priority: "0.7" },

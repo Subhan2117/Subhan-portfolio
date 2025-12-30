@@ -18,7 +18,7 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
           {featured.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
